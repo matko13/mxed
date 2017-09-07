@@ -34,4 +34,15 @@
     margin-top: -60px;
     width: 350px;
   }
+
+  &__icons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+}
+
+.header__image + .header__text {
+  margin-top: -60px;
+  opacity: 0.6;
 }
