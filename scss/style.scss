@@ -1,0 +1,25 @@
+@import './utils/animations';
+@import './utils/colors';
+@import './utils/variables';
+
+@import './parts/indicator';
+
+@import './states/form-initial';
+@import './states/form-submitted';
+
+body {
+  font-family: Sans-Serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  width: 260px;
+  transform: translate(-50%, -50%);
+}
+
+.is-hidden {
+	display: none;
+}

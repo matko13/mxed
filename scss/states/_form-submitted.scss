@@ -1,0 +1,43 @@
+.is-submitted {
+  color: $base;
+  background-color: $on-success--lighter;
+  border-color: $on-success;
+
+  & * {
+    cursor: auto;
+  }
+
+  .select-form__button {
+    background-color: $on-success;
+    color: $base;
+    border-top: none;
+  }
+
+  .select-form__list {
+    height: 80px;
+    padding: 0;
+    border: 2px solid $base;
+  }
+
+  .select-form__item {
+    border: none;
+
+    &-indicator {
+      display: none;
+    }
+
+    &-label {
+      width: 100%;
+      padding: 0;
+      background: none;
+      text-align: center;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+  }
+
+  .select-form__item-input:checked ~ .select-form__item-label {
+    color: $on-success;
+    background-color: $on-success--lighter;
+  }
+}
