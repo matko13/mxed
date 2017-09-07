@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,500,700,900");
 html {
   font-size: 100%; }
 
@@ -65,13 +65,45 @@ textarea {
 .header {
   background-color: #ffc800;
   color: #fff;
-  height: 386px;
   padding: 20px; }
   .header__logo {
     width: 90px; }
   .header__title {
+    margin: 0; }
+  .header__main {
+    margin-top: 30px;
     padding: 0 40px;
-    text-align: center; }
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .header__text {
+    font-weight: 300;
+    padding: 0 15px;
+    z-index: 1; }
+    .header__text--small {
+      font-size: 13px; }
+  .header__image {
+    margin-top: -60px;
+    width: 350px; }
+
+.btn {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  z-index: 1; }
+
+.btn__logo {
+  margin-left: 10px;
+  width: 90px; }
+
+.btn--wide {
+  width: 250px; }
 
 .burger {
   float: right;
@@ -112,7 +144,7 @@ textarea {
     position: absolute;
     width: 25px;
     height: 2px;
-    background-color: white;
+    background-color: #fff;
     border-radius: 4px;
     transition-duration: .15s;
     transition-property: transform;
