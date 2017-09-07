@@ -15,7 +15,7 @@ html {
   
   body {
     font-family: $base-font-family;
-    font-size: remify(13px);
+    font-size: $base-font-size;
     font-weight: $base-font-weight;
     line-height: 1.33;
     color: $text;
