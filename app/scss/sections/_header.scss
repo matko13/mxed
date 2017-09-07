@@ -1,0 +1,15 @@
+.header {
+    background-color: $hero;
+    color: $background;
+    height: 386px;
+    padding: 20px;
+
+    &__logo {
+        width: 90px;
+    }
+
+    &__title {
+        padding: 0 40px;
+        text-align: center;
+    }
+}

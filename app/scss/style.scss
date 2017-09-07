@@ -1,9 +1,3 @@
 @import './reset';
-
-h1 {
-    color: black;
-}
-
-.hello {
-    color: green;
-}
+@import './sections/header';
+@import './elements/burgerButton';
