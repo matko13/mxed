@@ -186,7 +186,7 @@ textarea {
       font-size: 13px; }
   .header__image {
     margin-top: -60px;
-    width: 350px; }
+    width: 320px; }
   .header__icons {
     display: flex;
     justify-content: space-around;
@@ -208,12 +208,43 @@ textarea {
     font-weight: 900;
     margin-bottom: 0; }
   .section__icon {
-    width: 120px;
-    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; }
+    .section__icon--large {
+      width: 120px;
+      height: 120px;
+      margin-top: 25px; }
+  .section__image {
+    margin-top: 30px;
+    height: 250px; }
+  .section__row {
+    display: flex;
     margin-top: 25px; }
+  .section__column {
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
+    .section__column .section__subtitle {
+      margin: 5px 0; }
   .section__subtitle {
     font-size: 18px;
     font-weight: 800; }
   .section__text {
-    margin: 0;
-    padding: 0 50px; }
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0; }
+
+.section-offer .section__text {
+  padding: 0 50px; }
+
+.section__title + .section__text {
+  padding: 0 15px;
+  margin: 15px 0; }
+
+.section-testimonials {
+  padding-left: 15px; }
+
+.section-information {
+  background-color: #fafafa;
+  padding: 40px 25px; }
