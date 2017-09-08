@@ -28,6 +28,10 @@
   &__image {
     margin-top: 30px;
     height: 250px;
+
+    &--large {
+      display: none;
+    }
   }
 
   &__row {
@@ -113,5 +117,26 @@
     .section__text {
       padding: 0 30px;
     }
+  }
+
+  .section__image {
+    display: none;
+
+    &--large {
+      display: block;
+      height: 680px;
+      position: relative;
+      right: -43px;
+      margin-bottom: -150px;
+      margin-top: 50px;
+    }
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .section__row {
+    width: 321px;
   }
 }
