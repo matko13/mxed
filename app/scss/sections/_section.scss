@@ -149,3 +149,50 @@
     padding: 0 140px;
   }
 }
+
+@media #{$screen-lg} {
+  .section {
+    position: relative;
+
+    &__image--large {
+      display: block;
+      height: 720px;
+      position: absolute;
+      right: 0;
+      top: 140px;
+    }
+
+    &__row {
+      width: 435px;
+    }
+  }
+  .section__title {
+    font-size: 32px;
+  }
+
+  .section-offer {
+    .section__text {
+      padding: 0 65px;
+    }
+  }
+
+  .section-information {
+    .row {
+      flex-direction: column;
+      margin-left: -300px;
+      width: 45%;
+
+      &:first-of-type {
+        margin-top: 20px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .footer {
+    height: 460px;
+  }
+}
