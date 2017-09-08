@@ -10,8 +10,23 @@
 
   <body>
     <header class="header">
-      <div class="header__nav">
+      <div class="header__topbar">
         <img class="header__logo" src="images/logo.png" alt="mxed">
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Features</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">How It Works</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Pricing</a>
+            </li>
+            <button class="btn btn--topbar btn--border">Login</button>
+            <button class="btn btn--topbar">Sign Up</button>
+          </ul>
+        </nav>
         <button class="burger js-burger" type="button">
           <span class="burger-box">
             <span class="burger-inner"></span>
@@ -19,34 +34,50 @@
         </button>
       </div>
       <div class="header__main">
-        <h1 class="header__title">Double Your Shopify Sales with Official Licensed Products</h1>
-        <p class="header__text">Hingeto allows you to find and sell a curated selection of products without holding inventory</p>
-        <button class="btn btn--header">
-          <p class="btn__text">Add the app to</p>
-          <img class="btn__logo" src="images/shopify-logo.png" alt="shopify logo">
-        </button>
-        <p class="header__text header__text--small">No inventory required - 100% free (beta)</p>
-        <img class="header__image" src="images/img-right.png" alt="hero image">
-        <p class="header__text">Partnered with:</p>
+        <div class="header__row">
+          <div class="header__column">
+            <h1 class="header__title">Double Your Shopify Sales with Official Licensed Products</h1>
+            <p class="header__text">Hingeto allows you to find and sell a curated selection of products without holding inventory</p>
+            <button class="btn btn--header">
+              <p class="btn__text">Add the app to</p>
+              <img class="btn__logo" src="images/shopify-logo.png" alt="shopify logo">
+            </button>
+            <p class="header__text header__text--small">No inventory required - 100% free (beta)</p>
+          </div>
+          <img class="header__image" src="images/img-right.png" alt="hero image">
+        </div>
+        <p class="header__text header__text--center">Partnered with:</p>
         <div class="header__icons">
           <img src="images/partners/Lucasfilm_Ltd._logo.png" alt="">
           <img src="images/partners/Warner_Bros.png" alt="">
           <img src="images/partners/MarvelLogo.png" alt="">
+          <img src="images/partners/Nickelodeon_logo_new.png" alt="">
+          <img src="images/partners/DC_Comics_logo.png" alt="">
+          <img src="images/partners/Nintendo.png" alt="">
+          <img src="images/partners/Activision.png" alt="">
         </div>
       </div>
     </header>
 
     <section class="section section-offer">
       <h2 class="section__title">What You Can Do With MXED</h2>
-      <img src="images/icons/icon-1.png" alt="" class="section__icon section__icon--large">
-      <h3 class="section__subtitle">Curated Top Brands</h3>
-      <p class="section__text">MXED helps you find and add top quality products shipped from the USA</p>
-      <img src="images/icons/icon-2.png" alt="" class="section__icon section__icon--large">
-      <h3 class="section__subtitle">We Ship Your Orders</h3>
-      <p class="section__text">After a sale, we will ship directly to your customer (3-5 business days)</p>
-      <img src="images/icons/icon-3.png" alt="" class="section__icon section__icon--large">
-      <h3 class="section__subtitle">Drive Sales</h3>
-      <p class="section__text">You focus on marketing your business and well focus on the rest</p>
+      <div class="row">
+        <div class="column">
+          <img src="images/icons/icon-1.png" alt="" class="section__icon section__icon--large">
+          <h3 class="section__subtitle">Curated Top Brands</h3>
+          <p class="section__text">MXED helps you find and add top quality products shipped from the USA</p>
+        </div>
+        <div class="column">
+          <img src="images/icons/icon-2.png" alt="" class="section__icon section__icon--large">
+          <h3 class="section__subtitle">We Ship Your Orders</h3>
+          <p class="section__text">After a sale, we will ship directly to your customer (3-5 business days)</p>
+        </div>
+        <div class="column">
+          <img src="images/icons/icon-3.png" alt="" class="section__icon section__icon--large">
+          <h3 class="section__subtitle">Drive Sales</h3>
+          <p class="section__text">You focus on marketing your business and well focus on the rest</p>
+        </div>
+      </div>
     </section>
 
     <section class="section section-testimonials">

@@ -19,6 +19,18 @@
   font-weight: 700;
 }
 
+.btn--topbar {
+  width: 90px;
+  border: 1px solid $background;
+  padding: 10px 15px;
+}
+
+.btn--border {
+  background-color: $hero;
+  color: $background;
+  margin: 0 20px;
+}
+
 .btn--box {
   color: $accent;
   width: 150px;

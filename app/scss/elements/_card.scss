@@ -41,3 +41,13 @@
     opacity: 0.6;
   }
 }
+
+@media #{$screen-sm} {
+  .card {
+    width: 550px;
+  }
+
+  .card__text {
+    font-size: 24px;
+  }
+}

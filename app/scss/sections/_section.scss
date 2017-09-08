@@ -107,3 +107,11 @@
     width: 100%;
   }
 }
+
+@media #{$screen-sm} {
+  .section-offer {
+    .section__text {
+      padding: 0 30px;
+    }
+  }
+}
