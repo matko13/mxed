@@ -210,7 +210,7 @@ textarea {
   .section__icon {
     width: 100px;
     height: 100px;
-    margin: 0 auto; }
+    margin: 0; }
     .section__icon--large {
       width: 120px;
       height: 120px;
@@ -237,6 +237,13 @@ textarea {
 
 .section-offer .section__text {
   padding: 0 50px; }
+
+.section-benefits {
+  padding: 40px 25px; }
+  .section-benefits .section__title {
+    padding: 0 40px; }
+  .section-benefits .section__text {
+    margin-top: 25px; }
 
 .section__title + .section__text {
   padding: 0 15px;

@@ -15,7 +15,7 @@
   &__icon {
     width: 100px;
     height: 100px;
-    margin: 0 auto;
+    margin: 0;
 
     &--large {
       width: 120px;
@@ -61,6 +61,19 @@
     padding: 0 50px;
   }
 } 
+
+.section-benefits {
+  padding: 40px 25px;
+
+  .section__title {
+    padding: 0 40px;
+  }
+  
+  .section__text {
+    margin-top: 25px;
+  }
+} 
+
 
 .section__title + .section__text {
   padding: 0 15px;
