@@ -1,4 +1,33 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); }
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff"); }
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 300;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-light-webfont.woff"); }
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff"); }
+
+/** Black */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 900;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-black-webfont.woff"); }
+
 html {
   font-size: 100%; }
 
@@ -11,7 +40,7 @@ body {
   padding: 0; }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "San Francisco", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.33;
@@ -51,7 +80,7 @@ select {
     outline: 0; }
 
 button {
-  font-family: "Roboto", sans-serif;
+  font-family: "San Francisco", sans-serif;
   cursor: pointer;
   background: none; }
   button::-moz-focus-inner {
@@ -59,7 +88,7 @@ button {
 
 input,
 textarea {
-  font-family: "Roboto", sans-serif;
+  font-family: "San Francisco", sans-serif;
   box-sizing: border-box; }
 
 .btn {
@@ -216,7 +245,7 @@ textarea {
     z-index: 1; }
   .box__main {
     font-size: 36px;
-    font-weight: 900;
+    font-weight: 700;
     margin: 20px 0; }
   .box__info {
     font-size: 16px;
@@ -387,7 +416,7 @@ textarea {
       margin: 5px 0; }
   .section__subtitle {
     font-size: 18px;
-    font-weight: 800; }
+    font-weight: 700; }
   .section__text {
     font-size: 14px;
     line-height: 1.5;
@@ -456,7 +485,7 @@ textarea {
       right: 0;
       top: 140px; }
     .section__row {
-      width: 450px; }
+      width: 435px; }
   .section__title, .box__title {
     font-size: 32px; }
   .section-offer .section__text {
