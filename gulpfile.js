@@ -5,7 +5,7 @@ const sass = require('gulp-sass');
 gulp.task('browserSync', function() {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: ''
     },
   })
 });
@@ -21,7 +21,7 @@ gulp.task('sass', function(){
 
 gulp.task('watch', ['browserSync'], function(){
   gulp.watch('app/scss/**/*.scss', ['sass']);
-  gulp.watch('app/index.html', browserSync.reload);
+  gulp.watch('index.html', browserSync.reload);
   gulp.watch('app/js/main.js', browserSync.reload);
 });
 
