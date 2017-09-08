@@ -119,6 +119,11 @@
     }
   }
 
+  .section__title--margin {
+    margin-bottom: 30px;
+  }
+
+
   .section__image {
     display: none;
 
@@ -138,5 +143,9 @@
 
   .section__row {
     width: 321px;
+  }
+
+  .section__title + .section__text {
+    padding: 0 140px;
   }
 }

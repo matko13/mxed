@@ -12,6 +12,8 @@
   &--dark {
     height: 380px;
     border: 3px solid $accent;
+    background-color: white;
+    z-index: 1;
   }
 
   &__title {
@@ -37,5 +39,11 @@
 
   &__text {
     margin: 5px;
+  }
+}
+
+@media #{$screen-sm} {
+  .box--dark {
+    margin: 25px -20px;
   }
 }

@@ -211,7 +211,9 @@ textarea {
   position: relative; }
   .box--dark {
     height: 380px;
-    border: 3px solid #4f4dfc; }
+    border: 3px solid #4f4dfc;
+    background-color: white;
+    z-index: 1; }
   .box__main {
     font-size: 36px;
     font-weight: 900;
@@ -225,6 +227,10 @@ textarea {
     justify-content: center; }
   .box__text {
     margin: 5px; }
+
+@media only screen and (min-width: 768px) {
+  .box--dark {
+    margin: 25px -20px; } }
 
 .header {
   background-color: #ffc800;
@@ -395,6 +401,8 @@ textarea {
 @media only screen and (min-width: 768px) {
   .section-offer .section__text {
     padding: 0 30px; }
+  .section__title--margin {
+    margin-bottom: 30px; }
   .section__image {
     display: none; }
     .section__image--large {
@@ -407,4 +415,6 @@ textarea {
   .row {
     display: flex; }
   .section__row {
-    width: 321px; } }
+    width: 321px; }
+  .section__title + .section__text, .box__title + .section__text {
+    padding: 0 140px; } }
