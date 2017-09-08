@@ -19,6 +19,20 @@
   font-weight: 700;
 }
 
+.btn--box {
+  color: $accent;
+  width: 150px;
+  border: 1px solid $accent;
+  padding: 10px 15px;
+  position: absolute;
+  bottom: 40px;
+}
+
+.btn--dark {
+  background-color: $accent;
+  color: $background;
+}
+
 .btn--footer {
   background-color: $accent;
   color: $background;
