@@ -71,8 +71,11 @@ textarea {
 
 .header__topbar,
 .header__main {
-  max-width: 1140px;
   margin: 0 auto;
+}
+
+.header__main {
+  max-width: 1148px;
 }
 
 a {

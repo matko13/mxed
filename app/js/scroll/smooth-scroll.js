@@ -232,7 +232,7 @@
 				anchor = anchor.offsetParent;
 			} while (anchor);
 		}
-		location = Math.max(location - headerHeight - offset, 0);
+		location = Math.max(location - headerHeight - offset - 40, 0);
 		return location;
 	};
 

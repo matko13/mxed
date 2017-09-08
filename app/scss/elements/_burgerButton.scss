@@ -5,15 +5,11 @@ $burger-layer-color: $background;
 $burger-layer-border-radius: 4px;
 
 .burger {
-  float: right;
   padding: 10px;
-  overflow: visible;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  cursor: pointer;
-  background-color: transparent;
-  border: 0;
+  z-index: 2;
+  position: fixed;
+  top: 30px;
+  right: 40px;
 
   &.is-active {
     .burger-inner {
@@ -34,13 +30,6 @@ $burger-layer-border-radius: 4px;
       transition: bottom .1s ease, transform .1s .14s cubic-bezier(.215, .61, .355, 1);
     }
   }
-}
-
-.burger-box {
-  position: relative;
-  display: block;
-  width: $burger-layer-width;
-  height: $burger-layer-height * 3 + $burger-layer-spacing * 2;
 }
 
 .burger-inner {

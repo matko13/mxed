@@ -1,10 +1,12 @@
 .header {
   background-color: $hero;
   color: $background;
-  padding: 20px;
+  padding: 40px;
+  padding-top: 0;
   overflow: hidden;
 
   &__logo {
+    align-self: center;
     height: 30px;
     width: 90px;
   }
@@ -14,8 +16,8 @@
   }
 
   &__main {
-    margin-top: 30px;
-    padding: 0 40px;
+    margin-top: 90px;
+    padding: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -46,7 +48,14 @@
 
   &__topbar {
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between;
+    position: fixed;
+    left: 50%;
+    padding: 20px 40px;
+    width: 100vw;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: $hero;
   }
 
   &__image {
@@ -144,6 +153,29 @@
 @media #{$screen-lg} {
   .header {
     padding: 40px 150px;
+    padding-top: 0;
+
+    &__wrapper {
+      height: 71px;
+      position: fixed;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+      background-color: $hero;
+    }
+
+    &__topbar {
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      left: 50%;
+      padding: 15px 0;
+      width: 100vw;
+      transform: translateX(-50%);
+      z-index: 2;
+      background-color: $hero;
+      max-width: 1148px;
+    }
 
     &__main {
       padding: 0;
