@@ -9,4 +9,6 @@ document.onreadystatechange = function () {
       dropdown.classList.toggle('is-active');
     });
   }
+
+  var scroll = new SmoothScroll('a[href*="#"]');
 }
