@@ -300,6 +300,10 @@ textarea {
 .section-testimonials {
   padding-left: 15px; }
 
+.section-pricing .section__text {
+  margin-top: 10px;
+  opacity: 0.4; }
+
 .section-information {
   background-color: #fafafa;
   padding: 40px 25px; }
