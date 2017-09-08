@@ -103,6 +103,7 @@
 }
 
 .footer {
+  border-bottom: none;
   position: relative;
 
   &__image {
@@ -139,6 +140,7 @@
 
   .row {
     display: flex;
+    max-width: 1148px;
   }
 
   .section__row {
@@ -194,5 +196,9 @@
 
   .footer {
     height: 460px;
+
+    &__image {
+      bottom: -100px;
+    }
   }
 }
