@@ -188,6 +188,12 @@
     display: flex;
   }
 
+  .header__nav-item + .btn,
+  .btn + .btn {
+    margin: 0;
+    margin-left: 20px;
+  }
+
   .header {
     &__main {
       align-items: flex-start;
@@ -215,8 +221,23 @@
     &__nav-list {
       display: flex;
       align-items: center;
+
       & * {
         z-index: 1;
+      }
+    }
+
+    &__nav-link {
+      font-size: 16px;
+    }
+
+    &__nav-item {
+      margin: 0;
+      font-weight: 400;
+      padding: 0 20px;
+      
+      &:first-of-type {
+        margin-top: 0;
       }
     }
 

@@ -462,6 +462,10 @@ a:hover:before {
     display: none; }
   .row {
     display: flex; }
+  .header__nav-item + .btn,
+  .btn + .btn {
+    margin: 0;
+    margin-left: 20px; }
   .header__main {
     align-items: flex-start;
     text-align: left; }
@@ -482,6 +486,14 @@ a:hover:before {
     align-items: center; }
     .header__nav-list * {
       z-index: 1; }
+  .header__nav-link {
+    font-size: 16px; }
+  .header__nav-item {
+    margin: 0;
+    font-weight: 400;
+    padding: 0 20px; }
+    .header__nav-item:first-of-type {
+      margin-top: 0; }
   .header__text {
     padding: 0;
     line-height: 1.5; }
