@@ -351,8 +351,8 @@ a:hover:before {
     position: absolute;
     top: 27px;
     left: 50%;
-    transform: translateX(-53%);
-    height: 640px;
+    transform: translateX(-56%);
+    height: 620px;
     z-index: 2; }
   .header__logo {
     align-self: center;
@@ -603,7 +603,7 @@ a:hover:before {
   left: 50%;
   transform: translateX(-50%);
   height: 776px;
-  z-index: 2; }
+  z-index: 1; }
 
 .section-offer .section__text {
   padding: 0 50px; }

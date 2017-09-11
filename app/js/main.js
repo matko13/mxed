@@ -1,5 +1,7 @@
 document.onreadystatechange = function () {
   if (document.readyState === "complete") {
+    let scroll = new SmoothScroll('a[href*="#"]');
+    
     const ACTIVE_CLASS = 'is-active';
   
     const dropdown = document.querySelector('.js-burger');
@@ -37,7 +39,5 @@ document.onreadystatechange = function () {
         menu.classList.remove("no-bg");
       }
     };
-   
-    var scroll = new SmoothScroll('a[href*="#"]'); 
   }
 }
