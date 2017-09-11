@@ -1,6 +1,11 @@
 document.onreadystatechange = function () {
   if (document.readyState === "complete") {
-    let scroll = new SmoothScroll('a[href*="#"]');
+    $('a').click(function() {
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top - 30
+      }, 500);
+      return false;
+    });
     
     const ACTIVE_CLASS = 'is-active';
   
