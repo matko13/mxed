@@ -349,7 +349,7 @@ a:hover:before {
   .header-bg {
     display: none;
     position: absolute;
-    top: 30px;
+    top: 27px;
     left: 50%;
     transform: translateX(-53%);
     height: 640px;
