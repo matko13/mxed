@@ -8,7 +8,20 @@ document.onreadystatechange = function () {
       e.stopPropagation();  
       dropdown.classList.toggle('is-active');
     });
-  }
 
-  var scroll = new SmoothScroll('a[href*="#"]');
+    const win = window,
+    docEl = document.documentElement,
+    $header = document.querySelector('.header__wrapper');
+
+    win.onscroll = function () {
+      const sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
+      if (sTop > 720) {
+        $header.classList.add("no-bg");
+      } else {
+        $header.classList.remove("no-bg");
+      }
+    };
+   
+    const scroll = new SmoothScroll('a[href*="#"]');    
+  }
 }

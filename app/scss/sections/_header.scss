@@ -9,6 +9,10 @@
     align-self: center;
     height: 30px;
     width: 90px;
+
+    &--color {
+      display: none;
+    }
   }
 
   &__title {
@@ -95,6 +99,56 @@
 .header__image + .header__text {
   margin-top: -60px;
   opacity: 0.6;
+}
+
+.header__wrapper.no-bg {
+  background-color: $background !important;
+
+  .header__logo--bw {
+    display: none;
+  }
+
+  .header__logo--color {
+    display: block;
+  }
+
+  .header__topbar,
+  .header__topbar a {
+    background-color: $background;
+    color: $text;
+  }
+
+  .btn--border {
+    border-color: $accent;
+    color: $accent !important;
+    background-color: $background !important;
+
+    &:hover {
+      background-color: $accent !important;
+      color: $background !important;
+    }
+  }
+
+  .btn--topbar {
+    background-color: $accent;
+    color: $background;
+
+    &:hover {
+      background-color: #716BFF;
+    }
+  }
+
+  a:before {
+    background-color: $text;
+  }
+
+  .burger-inner {
+    &,
+    &::before,
+    &::after {
+      background-color: $text;
+    }
+  }
 }
 
 @media #{$screen-sm} {

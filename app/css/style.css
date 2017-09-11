@@ -302,6 +302,8 @@ a:hover:before {
     align-self: center;
     height: 30px;
     width: 90px; }
+    .header__logo--color {
+      display: none; }
   .header__title {
     margin: 0; }
   .header__main {
@@ -360,6 +362,33 @@ a:hover:before {
 .header__image + .header__text {
   margin-top: -60px;
   opacity: 0.6; }
+
+.header__wrapper.no-bg {
+  background-color: #fff !important; }
+  .header__wrapper.no-bg .header__logo--bw {
+    display: none; }
+  .header__wrapper.no-bg .header__logo--color {
+    display: block; }
+  .header__wrapper.no-bg .header__topbar,
+  .header__wrapper.no-bg .header__topbar a {
+    background-color: #fff;
+    color: #282828; }
+  .header__wrapper.no-bg .btn--border {
+    border-color: #4f4dfc;
+    color: #4f4dfc !important;
+    background-color: #fff !important; }
+    .header__wrapper.no-bg .btn--border:hover {
+      background-color: #4f4dfc !important;
+      color: #fff !important; }
+  .header__wrapper.no-bg .btn--topbar {
+    background-color: #4f4dfc;
+    color: #fff; }
+    .header__wrapper.no-bg .btn--topbar:hover {
+      background-color: #716BFF; }
+  .header__wrapper.no-bg a:before {
+    background-color: #282828; }
+  .header__wrapper.no-bg .burger-inner, .header__wrapper.no-bg .burger-inner::before, .header__wrapper.no-bg .burger-inner::after {
+    background-color: #282828; }
 
 @media only screen and (min-width: 768px) {
   .burger {
@@ -522,7 +551,7 @@ a:hover:before {
       display: block;
       height: 680px;
       position: relative;
-      right: -43px;
+      right: -70px;
       margin-bottom: -150px;
       margin-top: 50px; }
   .row {
@@ -540,7 +569,7 @@ a:hover:before {
       display: block;
       height: 720px;
       position: absolute;
-      right: 0;
+      left: 800px;
       top: 140px; }
     .section__row {
       width: 435px; }
