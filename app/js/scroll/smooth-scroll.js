@@ -40,8 +40,8 @@
 		header: null,
 
 		// Speed & Easing
-		speed: 500,
-		offset: 0,
+		speed: 2500,
+		offset: 70,
 		easing: 'easeInOutCubic',
 		customEasing: null,
 
@@ -232,7 +232,7 @@
 				anchor = anchor.offsetParent;
 			} while (anchor);
 		}
-		location = Math.max(location - headerHeight - offset - 40, 0);
+		location = Math.max(location - 80 - offset, 0);
 		return location;
 	};
 

@@ -28,6 +28,7 @@
   width: 90px;
   border: 1px solid $background;
   padding: 10px 15px;
+  margin-left: 35px;
 
   &:hover {
     background-color: #F7F7F7;
@@ -37,7 +38,8 @@
 .btn--border {
   background-color: $hero;
   color: $background;
-  margin: 0 20px;
+  margin: 35px;
+  margin-bottom: 15px;
 
   &:hover {
     background-color: $background;

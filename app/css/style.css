@@ -138,14 +138,16 @@ a:hover:before {
 .btn--topbar {
   width: 90px;
   border: 1px solid #fff;
-  padding: 10px 15px; }
+  padding: 10px 15px;
+  margin-left: 35px; }
   .btn--topbar:hover {
     background-color: #F7F7F7; }
 
 .btn--border {
   background-color: #ffc800;
   color: #fff;
-  margin: 0 20px; }
+  margin: 35px;
+  margin-bottom: 15px; }
   .btn--border:hover {
     background-color: #fff;
     color: #282828; }
@@ -401,15 +403,21 @@ a:hover:before {
     display: none;
     margin: 0; }
   .header__nav-item {
-    margin: 0 16px;
-    font-weight: 400; }
+    margin: 16px;
+    font-weight: 400;
+    padding-left: 20px; }
+    .header__nav-item:first-of-type {
+      margin-top: 90px; }
   .header__nav-link {
     color: #fff;
-    font-size: 16px; }
+    font-size: 20px; }
 
 .header__image + .header__text {
   margin-top: -60px;
   opacity: 0.6; }
+
+.header__nav-list.no-bg {
+  background-color: #fff !important; }
 
 .header__wrapper.no-bg {
   background-color: #fff !important; }
@@ -437,6 +445,17 @@ a:hover:before {
     background-color: #282828; }
   .header__wrapper.no-bg .burger-inner, .header__wrapper.no-bg .burger-inner::before, .header__wrapper.no-bg .burger-inner::after {
     background-color: #282828; }
+
+.is-active.header__nav-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  left: -35px;
+  top: 60px;
+  height: calc(100vh - 60px);
+  width: calc(100vw + 35px);
+  background-color: #ffc800; }
 
 @media only screen and (min-width: 768px) {
   .burger {
@@ -475,7 +494,7 @@ a:hover:before {
     padding: 40px 150px;
     padding-top: 0; }
     .header__wrapper {
-      height: 71px;
+      height: 73px;
       position: fixed;
       left: 0;
       width: 100%;
