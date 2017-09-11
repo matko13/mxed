@@ -61,6 +61,16 @@
   }
 }
 
+.pricing-bg {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 776px;
+  z-index: 2;
+}
+
 .section-offer {
   .section__text {
     padding: 0 50px;
@@ -184,6 +194,10 @@
     .section__text {
       padding: 0 65px;
     }
+  }
+
+  .pricing-bg {
+    display: block;
   }
 
   .section-information {

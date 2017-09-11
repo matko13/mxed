@@ -346,6 +346,14 @@ a:hover:before {
   padding: 40px;
   padding-top: 0;
   overflow: hidden; }
+  .header-bg {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-53%);
+    height: 640px;
+    z-index: 2; }
   .header__logo {
     align-self: center;
     height: 30px;
@@ -505,6 +513,8 @@ a:hover:before {
   .header {
     padding: 40px 150px;
     padding-top: 0; }
+    .header-bg {
+      display: block; }
     .header__wrapper {
       height: 73px;
       position: fixed;
@@ -586,6 +596,15 @@ a:hover:before {
     line-height: 1.5;
     margin: 0; }
 
+.pricing-bg {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 776px;
+  z-index: 2; }
+
 .section-offer .section__text {
   padding: 0 50px; }
 
@@ -663,6 +682,8 @@ a:hover:before {
     font-size: 32px; }
   .section-offer .section__text {
     padding: 0 65px; }
+  .pricing-bg {
+    display: block; }
   .section-information .row {
     flex-direction: column;
     margin-left: -300px;

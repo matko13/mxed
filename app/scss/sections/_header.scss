@@ -5,6 +5,16 @@
   padding-top: 0;
   overflow: hidden;
 
+  &-bg {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-53%);
+    height: 640px;
+    z-index: 2;
+  }
+
   &__logo {
     align-self: center;
     height: 30px;
@@ -257,6 +267,10 @@
   .header {
     padding: 40px 150px;
     padding-top: 0;
+
+    &-bg {
+      display: block;
+    }
 
     &__wrapper {
       height: 73px;
