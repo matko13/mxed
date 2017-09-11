@@ -114,7 +114,18 @@
   }
 }
 
+.rows-wrapper {
+  display: flex;
+  max-width: 1148px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
 @media #{$screen-sm} {
+  .rows-wrapper {
+    justify-content: center;
+  }
+  
   .section-offer {
     .section__text {
       padding: 0 30px;
@@ -139,11 +150,6 @@
     }
   }
 
-  .row {
-    display: flex;
-    max-width: 1148px;
-  }
-
   .section__row {
     width: 321px;
   }
@@ -166,7 +172,8 @@
     }
 
     &__row {
-      width: 435px;
+      max-width: 350px;
+      width: 350px;
     }
   }
   .section__title {
