@@ -223,6 +223,7 @@ a:hover:before {
 
 .card {
   width: 305px;
+  margin: 0 auto;
   border-radius: 4px;
   box-shadow: 0 6px 11px 0 rgba(91, 89, 252, 0.1), 0 0 1px 0 rgba(79, 77, 252, 0.1);
   padding: 30px;
@@ -292,6 +293,49 @@ a:hover:before {
   .box--dark {
     margin: 25px -20px; } }
 
+.frame {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100vw; }
+
+.slides {
+  display: inline-block; }
+  .slides li {
+    position: relative;
+    display: inline-block;
+    padding-left: 45px;
+    width: 90vw;
+    text-align: center; }
+    .slides li .card {
+      white-space: initial; }
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+  z-index: 1;
+  display: none; }
+
+.next {
+  right: 0; }
+
+.prev {
+  left: 0; }
+
+.next svg, .prev svg {
+  width: 25px; }
+
+@media screen-sm {
+  .frame {
+    width: 650px; }
+  .slides li {
+    padding-left: 0;
+    width: 650px; }
+  .next, .prev {
+    display: inline-block; } }
+
 .header {
   background-color: #ffc800;
   color: #fff;
@@ -304,6 +348,8 @@ a:hover:before {
     width: 90px; }
     .header__logo--color {
       display: none; }
+  .header__link:before, .header__link:after {
+    display: none; }
   .header__title {
     margin: 0; }
   .header__main {
@@ -529,6 +575,7 @@ a:hover:before {
   opacity: 0.4; }
 
 .section-information {
+  overflow: hidden;
   background-color: #fafafa;
   padding: 40px 25px; }
 

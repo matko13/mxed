@@ -15,6 +15,13 @@
     }
   }
 
+  &__link {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+
   &__title {
     margin: 0;
   }

@@ -1,0 +1,60 @@
+.frame {
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100vw;
+}
+
+.slides {
+  display: inline-block;
+
+  li {
+    position: relative;
+    display: inline-block;
+    padding-left: 45px;
+    width: 90vw;
+    text-align: center;
+  
+    .card {
+      white-space: initial;
+    }
+  }
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.next {
+  right: 0;
+}
+
+.prev {
+  left: 0;
+}
+
+.next svg, .prev svg {
+  width: 25px;
+}
+
+@media #{screen-sm} {
+  .frame {
+    width: 650px;
+  }
+
+  .slides {
+    li {
+      padding-left: 0;
+      width: 650px;
+    }
+  }
+  
+  .next, .prev {
+    display: inline-block;
+  }
+}

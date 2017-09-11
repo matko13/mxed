@@ -9,6 +9,9 @@ document.onreadystatechange = function () {
       dropdown.classList.toggle('is-active');
     });
 
+    const slider = document.querySelector('.js_slider');
+    lory(slider, { infinite: 1 });
+
     const win = window,
     docEl = document.documentElement,
     $header = document.querySelector('.header__wrapper');
