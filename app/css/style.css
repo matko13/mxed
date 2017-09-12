@@ -601,11 +601,12 @@ a:hover:before {
   height: 776px;
   z-index: 1; }
 
-.section-offer {
+.section-offer__content {
   max-width: 1148px;
   margin: 0 auto; }
-  .section-offer .section__text {
-    padding: 0 50px; }
+
+.section-offer .section__text {
+  padding: 0 50px; }
 
 .section-benefits {
   padding: 40px 25px; }
