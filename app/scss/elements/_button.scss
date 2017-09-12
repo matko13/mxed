@@ -50,9 +50,10 @@
   color: $accent;
   width: 150px;
   border: 1px solid $accent;
-  padding: 10px 15px;
+  line-height: 40px;
   position: absolute;
   bottom: 40px;
+  left: 48px;
 
   &:hover {
     background-color: $accent;
