@@ -358,8 +358,6 @@ a:hover:before {
     align-self: center;
     height: 30px;
     width: 90px; }
-    .header__logo--color {
-      display: none; }
   .header__link:before, .header__link:after {
     display: none; }
   .header__title {
@@ -395,6 +393,8 @@ a:hover:before {
     transform: translateX(-50%);
     z-index: 2;
     background-color: #ffc800; }
+  .header__wrapper {
+    box-shadow: 0 6px 11px 0 rgba(91, 89, 252, 0.1); }
   .header__image {
     position: relative;
     margin-top: -60px;
@@ -402,8 +402,8 @@ a:hover:before {
   .header__icons {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
-    height: 20px;
     z-index: 1; }
     .header__icons * {
       margin: 0 10px; }
@@ -429,10 +429,6 @@ a:hover:before {
 
 .header__wrapper.no-bg {
   background-color: #fff !important; }
-  .header__wrapper.no-bg .header__logo--bw {
-    display: none; }
-  .header__wrapper.no-bg .header__logo--color {
-    display: block; }
   .header__wrapper.no-bg .header__topbar,
   .header__wrapper.no-bg .header__topbar a {
     background-color: #fff;
@@ -605,8 +601,11 @@ a:hover:before {
   height: 776px;
   z-index: 1; }
 
-.section-offer .section__text {
-  padding: 0 50px; }
+.section-offer {
+  max-width: 1148px;
+  margin: 0 auto; }
+  .section-offer .section__text {
+    padding: 0 50px; }
 
 .section-benefits {
   padding: 40px 25px; }
