@@ -124,8 +124,9 @@
 
   &__image {
     bottom: 0;
+    left: -40px;
     position: absolute;
-    width: 100%;
+    width: 120%;
   }
 }
 
@@ -171,6 +172,11 @@
 
   .section__title + .section__text {
     padding: 0 140px;
+  }
+
+  .footer__image {
+    left: 0;
+    width: 100%;
   }
 }
 
