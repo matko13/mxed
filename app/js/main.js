@@ -36,7 +36,7 @@ document.onreadystatechange = function () {
 
     win.onscroll = function () {
       const sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
-      if (sTop > 720) {
+      if (sTop > 625) {
         $header.classList.add("no-bg");
         menu.classList.add("no-bg");
       } else {

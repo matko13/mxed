@@ -12,7 +12,7 @@
     left: 50%;
     transform: translateX(-56%);
     height: 620px;
-    z-index: 2;
+    z-index: 1;
   }
 
   &__logo {
@@ -69,13 +69,10 @@
     position: fixed;
     left: 50%;
     padding: 20px 40px;
-    width: 100vw;
+    width: 101%;
     transform: translateX(-50%);
     z-index: 2;
     background-color: $hero;
-  }
-
-  &__wrapper {
     box-shadow: 0 6px 11px 0 rgba(91, 89, 252, 0.1);
   }
 
@@ -271,6 +268,7 @@
       width: 100%;
       z-index: 2;
       background-color: $hero;
+      box-shadow: 0 6px 11px 0 rgba(91, 89, 252, 0.1);      
     }
 
     &__topbar {
@@ -284,6 +282,7 @@
       z-index: 2;
       background-color: $hero;
       max-width: 1148px;
+      box-shadow: none;
     }
 
     &__main {
