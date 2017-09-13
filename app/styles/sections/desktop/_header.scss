@@ -64,4 +64,9 @@
       background-color: $hero;   
     }
   }
+
+  .header__wrapper.no-bg {
+    background-color: $background !important; 
+    box-shadow: 0 6px 11px 0 rgba(91, 89, 252, 0.1);  
+  }
 }

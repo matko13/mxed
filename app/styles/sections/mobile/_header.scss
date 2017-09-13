@@ -124,16 +124,12 @@
 }
 
 .header__wrapper.no-bg {
-  background-color: $background !important;
+  background-color: $background !important;  
 
   .header__topbar,
   .header__topbar a {
     background-color: $background;
     color: $text;
-  }
-
-  .header__topbar {
-    box-shadow: 0 6px 11px 0 rgba(91, 89, 252, 0.1);   
   }
 
   .btn--border {
@@ -179,4 +175,10 @@
   height: calc(100vh - 60px);
   width: calc(100vw + 35px);
   background-color: $hero;
+}
+
+@media #{$screen-only-xs} {
+  .header__topbar {
+    box-shadow: 0 6px 11px 0 rgba(91, 89, 252, 0.1);   
+  }
 }
