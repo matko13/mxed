@@ -1,0 +1,9 @@
+@media #{$screen-lg} {
+  .footer {
+    height: 460px;
+
+    &__image {
+      bottom: -100px;
+    }
+  }
+}

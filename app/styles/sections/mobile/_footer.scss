@@ -1,0 +1,12 @@
+.footer {
+  border-bottom: none;
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    bottom: 0;
+    left: -40px;
+    position: absolute;
+    width: 120%;
+  }
+}

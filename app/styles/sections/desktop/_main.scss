@@ -1,0 +1,47 @@
+@media #{$screen-lg} {
+  .section {
+    position: relative;
+
+    &__image--large {
+      display: block;
+      height: 720px;
+      position: absolute;
+      left: 800px;
+      top: 140px;
+    }
+
+    &__row {
+      max-width: 350px;
+      width: 350px;
+    }
+  }
+  .section__title {
+    font-size: 32px;
+  }
+
+  .section-offer {
+    .section__text {
+      padding: 0 65px;
+    }
+  }
+
+  .pricing-bg {
+    display: block;
+  }
+
+  .section-information {
+    .row {
+      flex-direction: column;
+      margin-left: -300px;
+      width: 45%;
+
+      &:first-of-type {
+        margin-top: 20px;
+      }
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

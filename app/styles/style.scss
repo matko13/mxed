@@ -1,0 +1,20 @@
+@import 'reset';
+
+@import 'elements/button';
+@import 'elements/burgerButton';
+@import 'elements/link';
+@import 'elements/card';
+@import 'elements/box';
+@import 'elements/slider';
+
+@import 'sections/mobile/header';
+@import 'sections/mobile/main';
+@import 'sections/mobile/footer';
+
+@import 'sections/tablet/header';
+@import 'sections/tablet/main';
+@import 'sections/tablet/footer';
+
+@import 'sections/desktop/header';
+@import 'sections/desktop/main';
+@import 'sections/desktop/footer';

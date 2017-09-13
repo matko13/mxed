@@ -16,7 +16,7 @@ gulp.task('browserSync', function() {
 });
 
 gulp.task('workflow', function () {
-	gulp.src('app/scss/**/*.scss')
+	gulp.src('app/styles/**/**/*.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
@@ -25,12 +25,12 @@ gulp.task('workflow', function () {
 		}))
 		.pipe(cssnano())
 		.pipe(sourcemaps.write('./'))
-	.pipe(gulp.dest('app/css'))
+	.pipe(gulp.dest('styles_css/css'))
 });
 
 gulp.task('watch', ['browserSync'], function () {
-  gulp.watch('app/scss/**/*.scss', ['workflow']);
+  gulp.watch('app/styles/**/**/*.scss', ['workflow']);
   gulp.watch('index.html', browserSync.reload);
-  gulp.watch('app/js/main.js', browserSync.reload);
+  gulp.watch('app/scripts/main.js', browserSync.reload);
 });
 
