@@ -25,7 +25,7 @@ gulp.task('workflow', function () {
 		}))
 		.pipe(cssnano())
 		.pipe(sourcemaps.write('./'))
-	.pipe(gulp.dest('styles_css/css'))
+	.pipe(gulp.dest('style_css/css'))
 });
 
 gulp.task('watch', ['browserSync'], function () {
