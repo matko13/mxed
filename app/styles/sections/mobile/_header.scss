@@ -45,6 +45,10 @@
     align-self: center;
     height: 30px;
     width: 90px;
+
+    &--color {
+      display: none;
+    }
   }
 
   &__link {
@@ -125,6 +129,14 @@
 
 .header__wrapper.no-bg {
   background-color: $background !important;  
+
+  .header__logo--bw {
+    display: none;
+  }
+
+  .header__logo--color {
+    display: block;
+  }
 
   .header__topbar,
   .header__topbar a {
