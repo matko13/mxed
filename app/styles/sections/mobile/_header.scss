@@ -5,7 +5,21 @@
   padding-top: 0;
   overflow: hidden;
 
-  &-bg {
+  &-image-sm {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-56%);
+    height: 620px;
+    z-index: 1;
+  }
+
+  &-image-md {
+    display: none;
+  }
+
+  &-image-lg {
     display: none;
     position: absolute;
     top: 27px;
@@ -24,11 +38,14 @@
   }
 
   &__icons {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    left: 180%;
     z-index: 1;
+    animation: marquee 12s linear infinite;
 
     & * {
       margin: 0 10px;

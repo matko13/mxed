@@ -64,3 +64,10 @@ $screen-only-md: 'only screen and (min-width: #{$md}) and (max-width: #{$lg - 1}
 $screen-only-lg: 'only screen and (min-width: #{$lg})';
 
 $screen-only-sm-and-md: 'only screen and (min-width: #{$sm}) and (max-width: #{$lg - 1})';
+
+// Animation
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-350%); }
+}

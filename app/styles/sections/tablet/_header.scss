@@ -19,6 +19,10 @@
       align-items: flex-start;    
     }
 
+    &__icons {
+      animation: none;
+    }
+
     &__image {
       position: relative;
       right: -30px;
