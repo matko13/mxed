@@ -9,4 +9,54 @@
     position: absolute;
     width: 120%;
   }
+
+  &__wrapper {
+    background-color: $accent;
+    color: $background;
+    position: fixed;
+    height: 60px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding-top: 20px;
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    max-width: 1148px;
+    margin: 0 auto;
+    display: none;
+    justify-content: space-between;
+    padding: 0 40px;
+
+    span {
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      color: $background;
+      font-weight: 600;
+      text-decoration: underline;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .footer__icon {
+      width: 20px;
+      height: 20px;
+      align-self: center;
+      cursor: pointer;
+    }
+  }
 }
