@@ -7,6 +7,12 @@
     display: flex;
   }
 
+  .with-shadow {
+    .header__topbar {
+      box-shadow: 0 6px 11px 0 rgba(91, 89, 252, 0.1);         
+    }
+  }
+
   .header__nav-item + .btn,
   .btn + .btn {
     margin: 0;
