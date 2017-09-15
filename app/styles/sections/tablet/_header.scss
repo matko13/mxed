@@ -78,3 +78,26 @@
     }
   }
 }
+
+@media #{$screen-only-sm-and-md} {
+  .header-tab {
+    &-left,
+    &-right {
+      display: block;
+      position: absolute;
+      z-index: 2;
+    }
+
+    &-left {
+      height: 480px;
+      top: 110px;
+      left: -20px;
+    }
+
+    &-right {
+      height: 440px;
+      top: 120px;
+      right: 30px;
+    }
+  }
+}
