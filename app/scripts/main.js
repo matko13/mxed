@@ -9,16 +9,26 @@ document.onreadystatechange = function () {
     const footerCloseIcon = document.querySelector('.js-footer__icon');
     lory(slider, { infinite: 1 });
 
+    // Mobile menu
+
     function closeMobileMenu() {
       dropdown.classList.remove('is-active');
       menu.classList.remove('is-active');
     }
+
+    dropdown.addEventListener('click', (e) => {
+      e.stopPropagation();  
+      dropdown.classList.toggle('is-active');
+      menu.classList.toggle('is-active');
+    });
 
     menuButtons.forEach(function(button) {
       button.addEventListener('click', function() {
         closeMobileMenu()
       });
     })
+
+    // Smooth scroll animation
     
     $('a').click(function() {
       $('html, body').animate({
@@ -27,23 +37,32 @@ document.onreadystatechange = function () {
       closeMobileMenu();
       return false;
     });
-  
-    dropdown.addEventListener('click', (e) => {
-      e.stopPropagation();  
-      dropdown.classList.toggle('is-active');
-      menu.classList.toggle('is-active');
-    });
+
+    // Topbar style change on scroll
 
     window.onscroll = function () {
-      const sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
+      let sTop = (this.pageYOffset || docEl.scrollTop)  - (docEl.clientTop || 0);
+      const mq = window.matchMedia( "(min-width: 500px)" );
+      
+      if (mq.matches) {
+        sTop = sTop - 50;
+      }
+
       if (sTop > 625) {
         header.classList.add('no-bg');
         menu.classList.add('no-bg');
       } else {
         header.classList.remove('no-bg');
         menu.classList.remove('no-bg');
+        if (sTop > 1) {
+          header.classList.add('with-shadow');
+        } else {
+          header.classList.remove('with-shadow');
+        }
       }
     };
+
+    // Footer bar close
 
     footerCloseIcon.addEventListener('click', (e) => {
       e.stopPropagation();  
